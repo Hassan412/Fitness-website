@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    animation: animate 10s infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+@keyframes animate{
+    0%{
+        background-image: url(images/home-bg-1.jpg);
+    }
+    25%{
+        background-image: url(images/home-bg-1.jpg);
+    }
+    50%{
+        background-image: url(images/home-bg-2.jpg); 
+    }
+    75%{
+        background-image: url(images/home-bg-2.jpg);  
+    }
+    100%{
+        background-image: url(images/home-bg-3.jpg);
+    }
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+nav .logo{
+    height: calc(100% - 15px);
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: red;
+}
+nav ul li .active{
+    color: red;
+}
+header .content{
+    width: 30%;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+header .content b{
+    color: red;
+}
+header .content h1{
+    font-size: 33px;
+    color: white;
+    margin: 20px 0;
+    font-weight: 500;
+}
+header .content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 0 20px;
+}
+.image-slider{
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 100px);
+    transform: translate(-50%,-50%);
+    
+}
+.image-slider span{
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: gray;
+    cursor: pointer;
+}
+.image-slider span:hover{
+    background-color: darkgray;
+}
